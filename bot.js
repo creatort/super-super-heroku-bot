@@ -1,6 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
+bot.user.setGame(TEST BOT - DO NOT COMPILE)
+
 client.on('ready', () => {
     console.log('Bot is ready!');
 });
