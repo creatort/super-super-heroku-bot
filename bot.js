@@ -6,23 +6,23 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '#ping') {
+    if (message.content === '{ping') {
     	message.reply('Pong!');
   	}
 });
 client.on('message', message => {
-    if (message.content === '#pong') {
+    if (message.content === '{pong') {
     	message.reply('Ping! Hey waiiit!!');
   	}
 });
 client.on('message', message => {
-    if (message.content === '#help') {
+    if (message.content === '{help') {
     	message.reply('**Commands:** ping, pong, help');
   	}
 });
 client.on('message', message => {
     if (message.content === 'whats tomasbots prefix?') {
-    	message.reply('#');
+    	message.reply('Currently it is {');
   	}
 });
 // THIS  MUST  BE  THIS  WAY
