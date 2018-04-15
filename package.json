@@ -1,6 +1,6 @@
 {
-  "name": "Test",
-  "description": "Test",
+  "name": "TomasBOT Frame",
+  "description": "Tomasbot framework via discord",
   "version": "0.0.0",
   "main": "bot.js",
   "scripts": {
