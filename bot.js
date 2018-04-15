@@ -38,7 +38,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '£8ball') {
-        message.reply('**' + yesOrNo '**');
+        message.reply('#' + yesOrNo);
     }
 });
 
