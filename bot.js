@@ -1,6 +1,15 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.user.setActivity('you all!', { type: 'WATCHING' });
+bot.on('ready', () => {
+    bot.user.setStatus('idle') // Can be 'available', 'idle', 'dnd', or 'invisible'
+    bot.user.setPresence({
+        game: {
+            name: 'Type £help',
+            type: 0
+        }
+    });
+});
+
 var rand = ['Yes', 'No', 'Why are you even trying?', 'What do you think? NO', 'Maybe', 'Never', 'Yep'];
 
 var yesOrNo = rand[Math.floor(Math.random()*rand.length)];
