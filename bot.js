@@ -12,28 +12,28 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '£ping') {
+    if (message.content === '!ping') {
     	message.reply('Pong!');
   	}
 });
 client.on('message', message => {
-    if (message.content === '£pong') {
+    if (message.content === '!pong') {
     	message.reply('Ping! Hey waiiit!!');
   	}
 });
 client.on('message', message => {
-    if (message.content === '£help') {
+    if (message.content === '!help') {
     	message.reply('**Commands:** ping, pong, help');
   	}
 });
 client.on('message', message => {
-    if (message.content === '£help 8ball') {
+    if (message.content === '!help 8ball') {
     	message.reply('**8ball help** To get 8BALL to work you must use it as this; Ask the question in one message then use the 8ball command in the next.');
   	}
 });
 client.on('message', message => {
     if (message.content === 'whats tomasbots prefix?') {
-    	message.reply('Currently it is "£"');
+    	message.reply('Currently it is "!"');
   	}
 });
 
