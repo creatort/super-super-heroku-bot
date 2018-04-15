@@ -33,6 +33,6 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '£8ball') {
-        message.reply('Well, Here we go, I roll a ' + yesOrNo')
+        message.reply('Well, Here we go, I roll a ' + yesOrNo);
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
