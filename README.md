@@ -16,3 +16,4 @@ Once installed go to your command prompt and use the 'cd' command to navigate to
 Once in that path, type into the command prompt 'node bot.js' The bot should start up
 
 
+* NOTE: YOU WILL NEED TO MAKE A NEW FOLDER WITH YOUR TOKEN INSIDE. (AUTH.JS/ON)
