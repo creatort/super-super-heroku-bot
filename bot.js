@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
+client.user.setActivity('you all!', { type: 'WATCHING' });
 var rand = ['Yes', 'No', 'Why are you even trying?', 'What do you think? NO', 'Maybe', 'Never', 'Yep'];
 
 var yesOrNo = rand[Math.floor(Math.random()*rand.length)];
