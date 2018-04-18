@@ -34,6 +34,14 @@ client.on('message', message => {
         message.reply('I say,' + yesOrNo);
     
     }
+    	
+    if (message.content === prefix + 'updates) {
+    	const embed = new Discord.RichEmbed()
+        .setAuthor('TomasBot Update Info')
+        .addField('- General Updates', 'Added Updates command\nRemoved old help and updates command\n')
+    .addField('- Version:', '1.0.3')
+        message.channel.send({embed})
+  	}
 
         
         });
