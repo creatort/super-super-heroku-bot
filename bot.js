@@ -22,7 +22,7 @@ client.on('message', message => {
     	const embed = new Discord.RichEmbed()
         .setColor(0x00AE86)
         .setFooter('TomasBOT Framework - © 2018')
-        .setThumbnail('ttp://36.media.tumblr.com/bb14bd0b5c8f456ae325084b28da10e1/tumblr_inline_nrlkp2KKDD1t3voij_540.jpg')
+       
         .setAuthor('TomasBot Help')
         .addField('- General Commands', 'ping\nhelp\nupdates')
         .addField('- Fun Commands', '8ball\npong')
