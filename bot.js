@@ -38,10 +38,14 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '£8ball') {
+    if (message.content === '!8ball') {
         message.reply('I say,' + yesOrNo);
     }
 });
-
+client.on('message', message => {
+    if (message.content === '!updates') {
+        message.reply('Currently 2 things have been added and updated: 8ball and help commands **To find more go tot he githhb repo**');
+    }
+});
         // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
