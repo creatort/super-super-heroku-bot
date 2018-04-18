@@ -35,7 +35,7 @@ client.on('message', message => {
     
     }
     	
-    if (message.content === prefix + 'updates) {
+    if (message.content === prefix + 'updates') {
     	const embed = new Discord.RichEmbed()
         .setAuthor('TomasBot Update Info')
         .addField('- General Updates', 'Added Updates command\nRemoved old help and updates command\n')
