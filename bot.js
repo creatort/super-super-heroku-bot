@@ -34,11 +34,13 @@ client.on('message', message => {
         message.reply('I say,' + yesOrNo);
     
     
-});if (message.content === prefix + 'updates') {
+if (message.content === prefix + 'updates') {
     	const embed = new Discord.RichEmbed()
         .setAuthor('TomasBot Updates)
         .addField('- Update: V1.0.1', '- Added new help command (Helped by Alee)')
         message.channel.send({embed})
   	}
+        
+        });
         // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
