@@ -32,10 +32,13 @@ client.on('message', message => {
   	}
     if (message.content === prefix + '8ball') {
         message.reply('I say,' + yesOrNo);
-    }
-    if (message.content === prefix + 'updates') {
-        message.reply('Currently 2 things have been added and updated: 8ball and help commands **To find more go tot he githhb repo**');
-    }
-});
+    
+    
+});if (message.content === prefix + 'updates') {
+    	const embed = new Discord.RichEmbed()
+        .setAuthor('TomasBot Updates)
+        .addField('- Update: V1.0.1', '- Added new help command (Helped by Alee)')
+        message.channel.send({embed})
+  	}
         // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
