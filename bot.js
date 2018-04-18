@@ -27,7 +27,7 @@ client.on('message', message => {
         .addField('- General Commands', 'ping\nhelp\nupdates')
         .addField('- Fun Commands', '8ball\npong')
         .addField('- Help Commands', 'help 8ball\nhelp')
-        .addField('Prefix', 'This bot uses '!' as a Prefix.')
+        .addField('Prefix', 'This bot uses "!" as a Prefix.')
         message.channel.send({embed})
   	
     if (message.content === 'whats tomasbots prefix?') {
