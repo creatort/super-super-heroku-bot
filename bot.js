@@ -21,12 +21,12 @@ client.on('message', message => {
     if (message.content === prefix + 'help') {
     	const embed = new Discord.RichEmbed()
         .setAuthor('TomasBot Help')
-        .addField('- General Commands', 'ping\npong\nhelp\n8ball\nupdates')
+        .addField('- General Commands', 'ping\nhelp\nupdates')
+        .addField('- Fun Commands', '8ball\npong')
+        .addField('- Help Commands', 'help 8ball\nhelp
+        .addField('Prefix', 'This bot uses '!' as a Prefix.')
         message.channel.send({embed})
-  	}
-    if (message.content === prefix + 'help 8ball') {
-    	message.reply('**8ball help** To get 8BALL to work you must use it as this; Ask the question in one message then use the 8ball command in the next.');
-  	}
+  	
     if (message.content === 'whats tomasbots prefix?') {
     	message.reply('Currently it is "!"');
   	}
@@ -42,7 +42,14 @@ client.on('message', message => {
     .addField('- Version:', '1.0.3')
         message.channel.send({embed})
   	}
-
+}
+    if (message.content === prefix + '8ball help') {
+    	const embed = new Discord.RichEmbed()
+        .setAuthor('TomasBot Help')
+        .addField('8ball Help', '1. Ask your question\n After asking your question enter the command !8ball and send it.\n You will receive a reply.')
+        message.channel.send({embed})
+  	}
+  
         
         });
         // THIS  MUST  BE  THIS  WAY
