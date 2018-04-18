@@ -23,7 +23,7 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === '!help') {
-    	message.reply('**Commands:** ping, pong, help');
+    	message.reply('**Commands:** !ping, !pong, !help, !8ball help');
   	}
 });
 client.on('message', message => {
@@ -39,7 +39,7 @@ client.on('message', message => {
 
 client.on('message', message => {
     if (message.content === '£8ball') {
-        message.reply('#' + yesOrNo);
+        message.reply('I say,' + yesOrNo);
     }
 });
 
