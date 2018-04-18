@@ -33,13 +33,8 @@ client.on('message', message => {
     if (message.content === prefix + '8ball') {
         message.reply('I say,' + yesOrNo);
     
-    
-if (message.content === prefix + 'updates') {
-    	const embed = new Discord.RichEmbed()
-        .setAuthor('TomasBot Updates)
-        .addField('- Update: V1.0.1', '- Added new help command (Helped by Alee)')
-        message.channel.send({embed})
-  	}
+    }
+
         
         });
         // THIS  MUST  BE  THIS  WAY
