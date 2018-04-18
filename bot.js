@@ -23,7 +23,7 @@ client.on('message', message => {
         .setAuthor('TomasBot Help')
         .addField('- General Commands', 'ping\nhelp\nupdates')
         .addField('- Fun Commands', '8ball\npong')
-        .addField('- Help Commands', 'help 8ball\nhelp
+        .addField('- Help Commands', 'help 8ball\nhelp')
         .addField('Prefix', 'This bot uses '!' as a Prefix.')
         message.channel.send({embed})
   	
